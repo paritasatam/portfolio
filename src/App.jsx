@@ -25,45 +25,55 @@ const fadeUp = {
 };
 
 const tools = [
+  'Digital Marketing',
+  'Digital Ad Operations',
   'Google Ads',
-  'Meta Ads',
+  'Google Analytics',
   'MOLOCO',
   'Jio Ads',
-  'Sizmek',
-  'DCM',
-  'Canva',
-  'Excel',
-  'Google Analytics',
-  'A/B Testing',
-  'SQL (Beginner)',
-  'Power BI'
+  'OTT Workflows',
+  'Dalet Flex',
+  'SEO',
+  'SEM',
+  'Media Planning',
+  'SQL'
 ];
 
 const strengths = [
   {
     title: 'Campaign Execution',
-    text: 'End-to-end ad campaign execution with strong delivery discipline, stakeholder coordination, and platform management.'
+    text: 'End-to-end campaign execution across digital platforms with a strong focus on delivery, coordination, and media objectives.'
   },
   {
-    title: 'Performance Reporting',
-    text: 'Campaign monitoring, A/B testing, engagement analysis, and reporting that supports smarter optimization.'
+    title: 'Ad Ops + Analytics',
+    text: 'Hands-on experience with ad operations, campaign monitoring, reporting, optimization, and analytics-driven decision making.'
   },
   {
-    title: 'Ad Operations',
-    text: 'Hands-on exposure to trackers, ad tools, delivery workflows, and multi-platform campaign operations.'
+    title: 'OTT & Digital Workflows',
+    text: 'Exposure to digital media workflows, OTT content operations, and platform-led execution in fast-moving environments.'
   }
 ];
 
 const experience = [
   {
-    role: 'Digital Ad Operations Specialist',
-    company: 'Viacom18 Sports',
-    period: 'Feb 2023 – Jun 2023',
+    role: 'Digital Media Specialist',
+    company: 'Prasar Bharati',
+    period: 'Aug 2025 – Present',
     points: [
-      'Managed end-to-end execution of ad campaigns for major events including WPL 2023 and IPL 2023.',
-      'Worked across Jio Ads, MOLOCO, Google Ads, and Google Ad Manager to optimize delivery and engagement.',
-      'Used Sizmek and DCM trackers to analyze impressions, monitor performance, and support ROI-focused testing.',
-      'Worked on campaigns for brands including ITC, Rapido, IKEA, and TVS.'
+      'Working on streamlining the digital workflow of programmes on OTT platforms.',
+      'Supporting digital media operations in a content and platform-driven environment.',
+      'Building experience at the intersection of digital media, workflows, and OTT execution.'
+    ]
+  },
+  {
+    role: 'Consultant – Digital Ad Ops',
+    company: 'JioHotstar',
+    period: 'Feb 2023 – Feb 2024',
+    points: [
+      'Executed advertising campaigns for WPL 2023 and IPL 2023, enhancing audience engagement.',
+      'Managed ad servers and campaigns across Jio Ads, MOLOCO, and Google Ads to achieve marketing goals.',
+      'Worked with clients including ITC, Rapido, IKEA, and TVS.',
+      'Built hands-on experience in digital ad operations, campaign delivery, and platform execution.'
     ]
   },
   {
@@ -71,19 +81,28 @@ const experience = [
     company: 'Edit It Media',
     period: 'Jan 2022 – Feb 2023',
     points: [
-      'Managed and scheduled social media content across multiple channels.',
-      'Helped increase audience engagement through content strategy and posting optimization.',
-      'Supported campaigns across YouTube, Twitter, Facebook, and Instagram.',
-      'Assisted with graphics, videos, ad copy, market research, and competitor analysis.'
+      'Worked on social media marketing, search engine optimization, and search engine marketing.',
+      'Used Google Analytics and supported media planning activities.',
+      'Contributed to digital marketing execution across multiple channels.'
+    ]
+  },
+  {
+    role: 'Research Analyst',
+    company: 'Sardar Patel Technology Business Incubator (SP-TBI)',
+    period: 'Jun 2021 – Dec 2021',
+    points: [
+      'Worked in a research-oriented role with exposure to SQL.',
+      'Built analytical thinking and problem-solving skills in a structured environment.'
     ]
   }
 ];
 
 const certifications = [
-  'Digital Marketing Certification – DMTI',
-  'Google Ads – Search & Display Certified',
-  'Data Analytics Job Simulation – Forage',
-  'Business Intelligence using Power BI – Skill Nation'
+  'Professional Diploma in Digital Marketing',
+  'Basics of Digital Marketing',
+  'Data Analytics',
+  'ChatGPT for Everyone',
+  'Google Analytics Individual Qualification'
 ];
 
 function ThemeToggle({ theme, setTheme }) {
@@ -180,15 +199,15 @@ function Hero() {
           <h1 className="hero-title">
             Parita Satam
             <br />
-            <span>campaign-focused</span>
+            <span>digital marketing</span>
             <br />
-            digital marketer.
+            + data analytics.
           </h1>
 
           <p className="hero-copy">
-            I work at the intersection of campaign execution, ad-tech platforms,
-            audience engagement, and performance reporting — turning media plans
-            into measurable outcomes.
+            I work across digital marketing, ad operations, OTT workflows, and
+            analytics — combining campaign execution, platform expertise, and
+            problem-solving to create measurable impact.
           </p>
 
           <div className="hero-actions">
@@ -225,18 +244,18 @@ function Hero() {
 
           <div className="stats-grid">
             <div className="stat-card">
-              <p className="stat-value">2+</p>
-              <p className="stat-label">Years in digital marketing and ad operations</p>
+                <p className="stat-value">2+</p>
+                <p className="stat-label">Years in digital marketing and ad operations</p>
+                </div>
+                <div className="stat-card">
+                    <p className="stat-value">WPL / IPL</p>
+                    <p className="stat-label">Major event campaign execution exposure</p>
+                </div>
+                <div className="stat-card">
+                    <p className="stat-value">Multi-platform</p>
+                    <p className="stat-label">Ad-tech, trackers, reporting, and optimization</p>
+                </div>
             </div>
-            <div className="stat-card">
-              <p className="stat-value">WPL / IPL</p>
-              <p className="stat-label">Major event campaign execution exposure</p>
-            </div>
-            <div className="stat-card">
-              <p className="stat-value">Multi-platform</p>
-              <p className="stat-label">Ad-tech, trackers, reporting, and optimization</p>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
@@ -285,8 +304,8 @@ function About() {
       <div className="container">
         <SectionHeader
           eyebrow="About"
-          title="A portfolio designed for marketing, campaign execution, and ad ops"
-          copy="This design is intentionally tailored to your domain. It feels polished and premium, but stays focused on campaign execution, reporting, ad-tech tools, and performance-led work instead of adding unrelated tech sections."
+          title="A portfolio designed for digital marketing, ad ops, and media workflows"
+          copy="This portfolio is tailored to your domain and reflects your mix of campaign execution, ad operations, OTT workflow exposure, analytics, and digital marketing experience. It stays focused on the work you actually do."
         />
 
         <div className="card-grid three">
@@ -509,7 +528,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="site-footer">
-      Designed for digital marketing, campaign operations, and performance reporting.
+      Designed for digital marketing, ad operations, OTT workflows, and analytics.
     </footer>
   );
 }
