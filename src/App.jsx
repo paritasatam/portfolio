@@ -215,7 +215,11 @@ function Hero() {
               View Experience
             </a>
 
-            <a href="/Parita-Resume.pdf" download className="btn btn-secondary">
+            <a
+            href={`${import.meta.env.BASE_URL}Parita-Resume.pdf`}
+            download
+            className="btn btn-secondary"
+            >
               <Download size={16} />
               <span>Download Resume</span>
             </a>
