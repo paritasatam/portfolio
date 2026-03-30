@@ -223,10 +223,6 @@ function Hero() {
               <Download size={16} />
               <span>Download Resume</span>
             </a>
-
-            <a href="#contact" className="btn btn-secondary">
-              Contact Me
-            </a>
           </div>
 
           <div className="social-row">
