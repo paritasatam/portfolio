@@ -126,7 +126,7 @@ function SectionHeader({ eyebrow, title, copy }) {
         <Sparkles size={14} />
         <span>{eyebrow}</span>
       </div>
-      <h2 className="section-title">{title}</h2>
+      {title ? <h2 className="section-title">{title}</h2> : null}
       {copy ? <p className="section-copy">{copy}</p> : null}
     </div>
   );
@@ -308,7 +308,6 @@ function About() {
       <div className="container">
         <SectionHeader
           eyebrow="About"
-          title="A portfolio designed for digital marketing, ad ops, and media workflows"
           copy="This portfolio is tailored to your domain and reflects your mix of campaign execution, ad operations, OTT workflow exposure, analytics, and digital marketing experience. It stays focused on the work you actually do."
         />
 
