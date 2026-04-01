@@ -41,16 +41,16 @@ const tools = [
 
 const strengths = [
   {
-    title: 'Campaign Execution',
-    text: 'End-to-end campaign execution across digital platforms with a strong focus on delivery, coordination, and media objectives.'
+    title: 'Campaign Strategy and Execution',
+    text: 'Plan and execute end-to-end campaigns across digital platforms with clear ownership of setup, delivery, and performance outcomes.'
   },
   {
-    title: 'Ad Ops + Analytics',
-    text: 'Hands-on experience with ad operations, campaign monitoring, reporting, optimization, and analytics-driven decision making.'
+    title: 'Ad Operations and Optimization',
+    text: 'Manage trafficking, QA, monitoring, and in-flight optimization to improve pacing, efficiency, and campaign quality.'
   },
   {
-    title: 'OTT & Digital Workflows',
-    text: 'Exposure to digital media workflows, OTT content operations, and platform-led execution in fast-moving environments.'
+    title: 'Analytics and Reporting',
+    text: 'Translate campaign data into concise reports and actionable recommendations for stakeholders and business teams.'
   }
 ];
 
@@ -58,7 +58,7 @@ const experience = [
   {
     role: 'Digital Media Specialist',
     company: 'Prasar Bharati',
-    period: 'Aug 2025 – Present',
+    period: 'Aug 2025 - Present',
     points: [
       'Working on streamlining the digital workflow of programmes on OTT platforms.',
       'Supporting digital media operations in a content and platform-driven environment.',
@@ -66,9 +66,9 @@ const experience = [
     ]
   },
   {
-    role: 'Consultant – Digital Ad Ops',
+    role: 'Consultant - Digital Ad Ops',
     company: 'JioHotstar',
-    period: 'Feb 2023 – Feb 2024',
+    period: 'Feb 2023 - Feb 2024',
     points: [
       'Executed advertising campaigns for WPL 2023 and IPL 2023, enhancing audience engagement.',
       'Managed ad servers and campaigns across Jio Ads, MOLOCO, and Google Ads to achieve marketing goals.',
@@ -79,7 +79,7 @@ const experience = [
   {
     role: 'Digital Marketing Intern',
     company: 'Edit It Media',
-    period: 'Jan 2022 – Feb 2023',
+    period: 'Jan 2022 - Feb 2023',
     points: [
       'Worked on social media marketing, search engine optimization, and search engine marketing.',
       'Used Google Analytics and supported media planning activities.',
@@ -89,7 +89,7 @@ const experience = [
   {
     role: 'Research Analyst',
     company: 'Sardar Patel Technology Business Incubator (SP-TBI)',
-    period: 'Jun 2021 – Dec 2021',
+    period: 'Jun 2021 - Dec 2021',
     points: [
       'Worked in a research-oriented role with exposure to SQL.',
       'Built analytical thinking and problem-solving skills in a structured environment.'
@@ -193,21 +193,22 @@ function Hero() {
         >
           <div className="hero-badge">
             <MonitorPlay size={14} />
-            <span>Digital Ad Operations • Performance Marketing • Analytics</span>
+            <span>Digital Ad Operations | Performance Marketing | Analytics</span>
           </div>
 
           <h1 className="hero-title">
             Parita Satam
             <br />
-            <span>digital marketing</span>
+            <span>Digital Marketing</span>
             <br />
-            + data analytics.
+            + Data Analytics.
           </h1>
 
           <p className="hero-copy">
-            I work across digital marketing, ad operations, OTT workflows, and
-            analytics — combining campaign execution, platform expertise, and
-            problem-solving to create measurable impact.
+            I am a Digital Marketing and Ad Operations professional with 2+
+            years of experience across OTT and digital ecosystems. I focus on
+            campaign delivery, performance optimization, and data-backed
+            reporting to drive measurable business results.
           </p>
 
           <div className="hero-actions">
@@ -274,19 +275,19 @@ function Hero() {
               <div className="profile-mini-grid">
                 <div className="mini-card">
                   <p className="mini-label">Primary Focus</p>
-                  <h3>Campaign Operations</h3>
+                  <h3>Campaign Delivery and Ad Ops</h3>
                   <p>
-                    Multi-platform execution, delivery tracking, optimization,
-                    and reporting.
+                    Multi-platform execution with strong focus on trafficking,
+                    delivery tracking, and optimization.
                   </p>
                 </div>
 
                 <div className="mini-card">
-                  <p className="mini-label">Strength</p>
-                  <h3>Performance Thinking</h3>
+                  <p className="mini-label">Professional Strength</p>
+                  <h3>Performance and Insights</h3>
                   <p>
-                    Reporting, A/B testing, insights, and actionable improvement
-                    recommendations.
+                    Structured reporting, A/B testing, and insight-led
+                    recommendations to improve campaign outcomes.
                   </p>
                 </div>
               </div>
@@ -304,7 +305,8 @@ function About() {
       <div className="container">
         <SectionHeader
           eyebrow="About"
-          copy="This portfolio is tailored to your domain and reflects your mix of campaign execution, ad operations, OTT workflow exposure, analytics, and digital marketing experience. It stays focused on the work you actually do."
+          title="Professional profile"
+          copy="I work at the intersection of digital marketing, ad operations, and analytics. My approach combines disciplined execution with data-driven optimization to deliver campaigns that meet both brand and performance goals."
         />
 
         <div className="card-grid three">
@@ -470,7 +472,7 @@ function Certifications() {
               <div className="simple-row">
                 <strong>Bachelor of Commerce in Accounting and Finance</strong>
                 <br />
-                University of Mumbai — Bhavan’s College of Arts and Commerce
+                University of Mumbai - Bhavan's College of Arts and Commerce
                 <br />
                 Graduation: May 2021
               </div>
@@ -496,8 +498,8 @@ function Contact() {
         >
           <SectionHeader
             eyebrow="Contact"
-            title="Let’s connect"
-            copy="This section stays simple so your portfolio remains clean and reliable while running locally."
+            title="Let's connect"
+            copy="Open to opportunities in digital marketing, ad operations, and analytics. Feel free to connect for roles, projects, or collaborations."
           />
 
           <div className="card-grid two">
