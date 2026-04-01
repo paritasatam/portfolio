@@ -17,7 +17,7 @@ import {
   Trophy,
   X
 } from 'lucide-react';
-import profileImage from './assets/Parita.jpg';
+import profileImage from './assets/Parita-Display.jpg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
