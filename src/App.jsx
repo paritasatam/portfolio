@@ -152,6 +152,16 @@ function Header({ theme, setTheme }) {
 
         <div className="desktop-actions">
           <ThemeToggle theme={theme} setTheme={setTheme} />
+          <a
+            href="https://www.linkedin.com/in/paritasatam/"
+            target="_blank"
+            rel="noreferrer"
+            className="nav-linkedin"
+            aria-label="Visit LinkedIn profile"
+            title="LinkedIn"
+          >
+            <Linkedin size={17} />
+          </a>
         </div>
 
         <button
@@ -166,12 +176,23 @@ function Header({ theme, setTheme }) {
 
       {open && (
         <div className="mobile-menu">
-          <a href="#about" onClick={() => setOpen(false)}>About</a>
-          <a href="#experience" onClick={() => setOpen(false)}>Experience</a>
-          <a href="#tools" onClick={() => setOpen(false)}>Tools</a>
-          <a href="#certifications" onClick={() => setOpen(false)}>Credentials</a>
-          <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
-          <ThemeToggle theme={theme} setTheme={setTheme} />
+          <div className="container mobile-menu-inner">
+            <a href="#about" onClick={() => setOpen(false)}>About</a>
+            <a href="#experience" onClick={() => setOpen(false)}>Experience</a>
+            <a href="#tools" onClick={() => setOpen(false)}>Tools</a>
+            <a href="#certifications" onClick={() => setOpen(false)}>Credentials</a>
+            <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+            <ThemeToggle theme={theme} setTheme={setTheme} />
+            <a
+              href="https://www.linkedin.com/in/paritasatam/"
+              target="_blank"
+              rel="noreferrer"
+              className="mobile-linkedin-link"
+            >
+              <Linkedin size={16} />
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
       )}
     </header>

@@ -183,16 +183,15 @@ img {
 }
 
 .site-header {
-  position: sticky;
-  top: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 60;
-  width: min(1180px, calc(100% - 28px));
-  margin: 14px auto 0;
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  backdrop-filter: blur(16px);
-  background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  background: color-mix(in srgb, var(--surface-strong) 82%, transparent);
+  box-shadow: 0 12px 24px rgba(2, 9, 20, 0.22);
 }
 
 .nav-row {
@@ -200,8 +199,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  min-height: 76px;
-  padding: 0 22px;
+  min-height: 72px;
 }
 
 .brand {
@@ -218,14 +216,14 @@ img {
 
 .desktop-nav {
   display: flex;
-  gap: 26px;
+  gap: 24px;
   font-size: 0.95rem;
   color: var(--muted);
 }
 
 .desktop-nav a {
   position: relative;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
   transition: color 0.2s ease;
 }
 
@@ -254,7 +252,7 @@ img {
 .desktop-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .menu-button {
@@ -264,23 +262,27 @@ img {
   height: 42px;
   width: 42px;
   border-radius: 12px;
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
   background: color-mix(in srgb, var(--surface) 92%, transparent);
   color: var(--heading);
 }
 
 .mobile-menu {
   display: none;
-  padding: 0 22px 20px;
+  padding: 0 0 18px;
   border-top: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface-strong) 92%, transparent);
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+  background: color-mix(in srgb, var(--surface-strong) 96%, transparent);
+}
+
+.mobile-menu-inner {
+  display: grid;
+  gap: 2px;
+  padding-top: 12px;
 }
 
 .mobile-menu a {
   display: block;
-  padding: 10px 0;
+  padding: 10px 2px;
   color: var(--muted);
 }
 
@@ -307,9 +309,67 @@ img {
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
 
+.desktop-actions .theme-toggle {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 12px;
+  justify-content: center;
+  box-shadow: none;
+}
+
+.desktop-actions .theme-toggle span {
+  display: none;
+}
+
+.desktop-actions .theme-toggle:hover {
+  box-shadow: 0 10px 20px rgba(2, 9, 20, 0.24);
+}
+
+.nav-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
+  background:
+    linear-gradient(145deg, var(--surface-highlight), transparent),
+    color-mix(in srgb, var(--surface) 92%, transparent);
+  color: var(--heading);
+  transition: transform 0.2s ease, box-shadow 0.22s ease, color 0.2s ease;
+}
+
+.nav-linkedin:hover {
+  transform: translateY(-1px);
+  color: var(--accent-3);
+  box-shadow: 0 10px 20px rgba(2, 9, 20, 0.24);
+}
+
+.mobile-menu .mobile-linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  color: var(--heading);
+  background:
+    linear-gradient(145deg, var(--surface-highlight), transparent),
+    color-mix(in srgb, var(--surface) 92%, transparent);
+}
+
+.mobile-menu .theme-toggle,
+.mobile-menu .mobile-linkedin-link {
+  width: 100%;
+  justify-content: center;
+}
+
 .hero-section {
   position: relative;
-  padding: 96px 0 74px;
+  padding: 124px 0 74px;
 }
 
 .hero-grid {
@@ -844,7 +904,7 @@ img {
   }
 
   .hero-section {
-    padding-top: 68px;
+    padding-top: 98px;
   }
 
   .profile-image {
@@ -872,19 +932,6 @@ img {
   .container,
   .container.narrow {
     width: min(100% - 24px, 1120px);
-  }
-
-  .site-header {
-    top: 8px;
-    width: calc(100% - 16px);
-    margin-top: 8px;
-    border-radius: 18px;
-  }
-
-  .nav-row,
-  .mobile-menu {
-    padding-left: 14px;
-    padding-right: 14px;
   }
 
   .hero-title {
